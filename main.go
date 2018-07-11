@@ -2,6 +2,7 @@ package main
 import "fmt"
 import "math/rand"
 import "time"
+import "display"
 
 func printRandDelay(s string, maxDelayMs float64){
 	for _, char := range s {
@@ -14,5 +15,6 @@ func printRandDelay(s string, maxDelayMs float64){
 }
 
 func main() {
+	display.NewFunc()
 	printRandDelay("Hello World!",200)
 }
